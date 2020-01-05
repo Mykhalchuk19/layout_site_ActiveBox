@@ -27,11 +27,12 @@ for (let i = 1; i <= slides.length; i += 1) {
   const button = document.createElement('button');
   button.classList.add('button');
   button.setAttribute('data-number', i);
-  button.setAttribute('onClick', 'showSlider()');
+  button.addEventListener('click', showSlider);
   dot.appendChild(button);
   dot.classList.add('dot');
   indicators.appendChild(dot);
 }
+
 const buttons = indicators.querySelectorAll('button.button');
 slides[0].classList.add('clients__slide__active');
 
