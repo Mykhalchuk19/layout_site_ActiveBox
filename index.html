@@ -23,6 +23,8 @@
             <img src="img/logo/ActiveBox.png" alt="logo" />
           </div>
           <nav class="nav">
+            <label for="menu__checkbox">&#9776;</label>
+            <input type="checkbox" id="menu__checkbox" />
             <ul class="nav__list">
               <li><a class="nav__link" href="#">FEATURES</a></li>
               <li><a class="nav__link" href="#">WORKS</a></li>
@@ -35,7 +37,7 @@
       </div>
     </header>
     <main class="main">
-      <section class="main__intro">
+      <section class="intro">
         <div class="wrapper">
           <div class="intro__inner">
             <h1 class="intro__title">Your Favorite One Page Multi Purpose Template</h1>
@@ -43,14 +45,14 @@
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna
               vel scelerisque nisl consectetur et.
             </p>
-            <input type="button" class="intro__button" value="FIND OUR MORE" />
+            <a href="#" class="intro__link">FIND OUR MORE</a>
           </div>
         </div>
       </section>
-      <section class="main__features">
+      <section class="features">
         <div class="wrapper">
           <ul class="features__list">
-            <li class="feature">
+            <li class="feature__item">
               <img class="feature__image" src="img/features/customize.png" alt="image" />
               <h4 class="feature__name">Easily Customised</h4>
               <p class="feature__about">
@@ -58,7 +60,7 @@
                 urna mollis ornare vel eu leo. Donec ullamcorper nulla
               </p>
             </li>
-            <li class="feature">
+            <li class="feature__item">
               <img class="feature__image" src="img/features/responsive.png" alt="image" />
               <h4 class="feature__name">Responsive ready</h4>
               <p class="feature__about">
@@ -66,7 +68,7 @@
                 urna mollis ornare vel eu leo. Donec ullamcorper nulla
               </p>
             </li>
-            <li class="feature">
+            <li class="feature__item">
               <img class="feature__image" src="img/features/design.png" alt="image" />
               <h4 class="feature__name">Modern design</h4>
               <p class="feature__about">
@@ -74,7 +76,7 @@
                 urna mollis ornare vel eu leo. Donec ullamcorper nulla
               </p>
             </li>
-            <li class="feature">
+            <li class="feature__item">
               <img class="feature__image" src="img/features/clean_code.png" alt="image" />
               <h4 class="feature__name">Clean code</h4>
               <p class="feature__about">
@@ -82,7 +84,7 @@
                 urna mollis ornare vel eu leo. Donec ullamcorper nulla
               </p>
             </li>
-            <li class="feature">
+            <li class="feature__item">
               <img class="feature__image" src="img/features/ship.png" alt="image" />
               <h4 class="feature__name">Ready to ship</h4>
               <p class="feature__about">
@@ -90,7 +92,7 @@
                 urna mollis ornare vel eu leo. Donec ullamcorper nulla
               </p>
             </li>
-            <li class="feature">
+            <li class="feature__item">
               <img class="feature__image" src="img/features/download.png" alt="image" />
               <h4 class="feature__name">Download to free</h4>
               <p class="feature__about">
@@ -101,9 +103,9 @@
           </ul>
         </div>
       </section>
-      <section class="main__works">
+      <section class="works">
         <ul class="works__list">
-          <li class="works__item">
+          <li class="works__item ">
             <div class="works__image">
               <img class="image" src="img/works/image1.png" alt="image" />
             </div>
@@ -177,7 +179,7 @@
           </li>
         </ul>
       </section>
-      <section class="main__team">
+      <section class="team">
         <div class="wrapper">
           <ul class="team__list">
             <li class="team__item">
@@ -333,32 +335,17 @@
                 <ul class="social__list">
                   <li class="social__item">
                     <a class="social__link">
-                      <img
-                        class="social__image"
-                        src="img/social/facebook.png"
-                        alt="facebook"
-                        height="18"
-                      />
+                      <img class="social__image" src="img/social/facebook.png" alt="facebook" />
                     </a>
                   </li>
                   <li class="social__item">
                     <a class="social__link">
-                      <img
-                        class="social__image"
-                        src="img/social/twitter.png"
-                        height="14"
-                        alt="twitter"
-                      />
+                      <img class="social__image" src="img/social/twitter.png" height="14" />
                     </a>
                   </li>
                   <li class="social__item">
                     <a class="social__link">
-                      <img
-                        class="social__image"
-                        src="img/social/linkedin.png"
-                        height="16"
-                        alt="linkedin"
-                      />
+                      <img class="social__image" src="img/social/linkedin.png" height="16" />
                     </a>
                   </li>
                 </ul>
@@ -367,7 +354,7 @@
           </ul>
         </div>
       </section>
-      <section class="main__clients">
+      <section class="clients">
         <ul class="clients__slider">
           <li class="clients__slide" data-index="1">
             <div class="clients__content">
@@ -377,7 +364,7 @@
               <div class="clients__response">
                 <p class="clients__text">
                   “Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium ipsa
-                  expedita tenetur dicta esse”
+                  expedita tenetur”
                 </p>
                 <p class="clients__name">Susan Sims, Interaction Designer at XYZ</p>
               </div>
@@ -441,7 +428,64 @@
           </li>
         </ul>
       </section>
+      <section class="download">
+        <div class="wrapper">
+          <div class="download__content">
+            <h3 class="download__title">Are You Ready to Start? Download Now For Free!</h3>
+            <p class="download__text">Fusce dapibus, tellus ac cursus commodo</p>
+            <a href="#" class="download__link">Download Here</a>
+          </div>
+        </div>
+      </section>
     </main>
+    <footer class="footer">
+      <div class="wrapper">
+        <ul class="footer__list">
+          <li class="footer__item">
+            <div class="location">
+              <h4 class="location__title">Location</h4>
+              <p class="location__place">3481 Melrose Place</p>
+              <p class="location__city">Beverly Hills, CA 90210</p>
+            </div>
+          </li>
+          <li class="footer__item">
+            <h4 class="social__title">Share with love</h4>
+            <ul class="social__footer__list">
+              <li class="social__item social__footer__item">
+                <a class="social__link">
+                  <img class="social__image" src="img/social/facebook.png" alt="facebook" />
+                </a>
+              </li>
+              <li class="social__item social__footer__item">
+                <a class="social__link">
+                  <img class="social__image" src="img/social/twitter.png" height="14" />
+                </a>
+              </li>
+              <li class="social__item social__footer__item">
+                <a class="social__link">
+                  <img class="social__image" src="img/social/linkedin.png" height="16" />
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="footer__item">
+            <div class="about">
+              <h4 class="about__title">About ActiveBox</h4>
+              <p class="about__text">
+                Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec ullamcorper nulla
+                non metus auctor fringilla.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="copyright">
+        <p class="copyright__text">Copyright © 2015 ActiveBox. All Rights Reserved</p>
+        <p class="copyright__author">
+          Made with <span class="copyright__name">by Kamal Chaneman</span>
+        </p>
+      </div>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>

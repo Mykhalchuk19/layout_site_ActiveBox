@@ -1,0 +1,26 @@
+{
+  "name": "activeBox",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run open",
+    "open": "concurrently \"http-server -a localhost -p 3000\" \"open http://localhost:3000/build\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mykhalchuk19/layout_site_ActiveBox.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mykhalchuk19/layout_site_ActiveBox/issues"
+  },
+  "homepage": "https://github.com/Mykhalchuk19/layout_site_ActiveBox#readme",
+  "devDependencies": {
+    "concurrently": "^5.0.2",
+    "http-server": "^0.12.0"
+  }
+}
